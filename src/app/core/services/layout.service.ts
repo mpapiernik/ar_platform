@@ -205,10 +205,10 @@ export class LayoutService {
     $body.addClass(state.skin.name);
     $("#logo img").attr('src', state.skin.logo);
 
-    $body.toggleClass('fixed-header', state.fixedHeader);
-    $body.toggleClass('fixed-navigation', state.fixedNavigation);
-    $body.toggleClass('fixed-ribbon', state.fixedRibbon);
-    $body.toggleClass('fixed-page-footer', state.fixedPageFooter);
+    $body.addClass("fixed-header");
+    $body.addClass("fixed-navigation");
+    $body.addClass("fixed-ribbon");
+    $body.addClass("fixed-page-footer");
     $body.toggleClass('container', state.insideContainer);
     $body.toggleClass('smart-rtl', state.rtl);
     $body.toggleClass('menu-on-top', state.menuOnTop);

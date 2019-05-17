@@ -9,7 +9,7 @@ export const config: any = {
 
   menu_speed: 200,
 
-  smartSkin: "smart-style-0",
+  smartSkin: "smart-style-1",
 
 
   skins: [
@@ -25,7 +25,7 @@ export const config: any = {
 
     {
       name: "smart-style-1",
-      logo: "assets/img/logo-white.png",
+      logo: "assets/img/pirxon-small-logo.png",
       skinBtnClass: "btn btn-block btn-xs txt-color-white",
       style: {
         background: '#3A4558'
