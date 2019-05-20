@@ -15,8 +15,8 @@ export class NavigationComponent implements OnInit {
     if (localStorage.getItem('role')) {
       this.role = localStorage.getItem('role');
     } else {
-      localStorage.setItem('role', 'frontend');
-      this.role = 'frontend';
+      localStorage.setItem('role', 'backend');
+      this.role = 'backend';
     }
   }
 

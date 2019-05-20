@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OrdersComponent } from './orders/orders.component';
-import { ProductsViewComponent } from './products-view/products-view.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import {routing} from "./e-commerce.routing";
 import {ShoppingCartComponent} from "./shopping-cart/shopping-cart.component";
@@ -27,7 +26,7 @@ import { SmartadminDatatableModule } from '@app/shared/ui/datatable/smartadmin-d
   declarations: [
     ShoppingCartComponent,
     OrdersComponent,
-    ProductsViewComponent, ProductDetailsComponent
+    ProductDetailsComponent
   ]
 })
 export class ECommerceModule { }
