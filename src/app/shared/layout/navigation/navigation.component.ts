@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {LoginInfoComponent} from "../../user/login-info/login-info.component";
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,11 +7,17 @@ import {LoginInfoComponent} from "../../user/login-info/login-info.component";
   templateUrl: './navigation.component.html'
 })
 export class NavigationComponent implements OnInit {
-
+  role: string;
   constructor() {
   }
 
   ngOnInit() {
+    if (localStorage.getItem('role')) {
+      this.role = localStorage.getItem('role');
+    } else {
+      localStorage.setItem('role', 'frontend');
+      this.role = 'frontend';
+    }
   }
 
 }

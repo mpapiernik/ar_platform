@@ -1,27 +1,15 @@
-
-import {ModuleWithProviders} from "@angular/core"
 import {RouterModule, Routes} from "@angular/router";
+import { DatatablesCaseComponent } from "./datatables-case/datatables-case.component";
 
 
 export const routes:Routes = [
 
   {
-    path: 'normal',
-    loadChildren: './normal-tables/normal-tables.module#NormalTablesModule',
-    data: {pageTitle: 'Normal'}
-  },
-
-  {
-    path: 'datatables',
-    loadChildren: './datatables-case/datatables-case.module#DatatablesCaseModule',
+    path: '',
+    component: DatatablesCaseComponent,
     data: {pageTitle: 'Datatables'}
-  },
-
-  {
-    path: 'ngx-datatable',
-    loadChildren: './ngx-datatable/ngx-datatable-case.module#NgxDatatableCaseModule',
-    data: {pageTitle: 'NGx Datatable'}
   }
+
 ];
 
 
