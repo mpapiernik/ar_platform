@@ -3,10 +3,7 @@ import {RouterModule, Routes} from "@angular/router";
 
 
 export const routes:Routes = [
-  {
-    path: 'forum',
-    loadChildren: './forum/forum.module#ForumModule'
-  },
+  
   {
     path: 'profile',
     loadChildren: './profile/profile.module#ProfileModule'
@@ -15,14 +12,8 @@ export const routes:Routes = [
     path: 'creator',
     loadChildren: './creator/creator.module#CreatorModule'
   },
-  {
-    path: 'gallery',
-    loadChildren: './gallery/gallery-demo.module#GalleryDemoModule'
-  },
-  {
-    path: 'timeline',
-    loadChildren: './timeline/timeline.module#TimelineModule'
-  },
+  
+  
   {
     path: 'projects',
     loadChildren: './projects/projects-list.module#ProjectsListModule'
