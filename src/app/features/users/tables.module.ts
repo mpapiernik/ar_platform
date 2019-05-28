@@ -1,20 +1,20 @@
 import {NgModule} from '@angular/core';
 import {routing} from './tables.routing';
-import { DatatablesCaseComponent } from './datatables-case/datatables-case.component';
-import { DatatablesCaseRoutingModule } from './datatables-case/datatables-case-routing.module';
+import { DatatablesUsersComponent } from './datatables-users.component';
+import { DatatablesUsersRoutingModule } from './datatables-users-routing.module';
 import { SharedModule } from '@app/shared/shared.module';
 import { SmartadminDatatableModule } from '@app/shared/ui/datatable/smartadmin-datatable.module';
 import { CommonModule } from '@angular/common';
 
 
 @NgModule({
-  declarations: [DatatablesCaseComponent],
+  declarations: [DatatablesUsersComponent],
   imports: [    
     routing,
     CommonModule,
     SharedModule,
     SmartadminDatatableModule,
-    DatatablesCaseRoutingModule
+    DatatablesUsersRoutingModule
   ],
 })
 export class TablesModule {}

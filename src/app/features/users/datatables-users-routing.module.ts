@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {PostViewComponent} from "./post-view.component";
+import {DatatablesUsersComponent} from "./datatables-users.component";
 
 const routes: Routes = [{
   path: '',
-  component: PostViewComponent
+  component: DatatablesUsersComponent
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  providers: []
+  exports: [RouterModule]
 })
-export class PostViewRoutingModule { }
+export class DatatablesUsersRoutingModule { }

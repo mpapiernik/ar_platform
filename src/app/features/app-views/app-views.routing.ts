@@ -12,8 +12,8 @@ export const routes:Routes = [
     loadChildren: './profile/profile.module#ProfileModule'
   },
   {
-    path: 'blog',
-    loadChildren: './blog/blog.module#BlogModule'
+    path: 'creator',
+    loadChildren: './creator/creator.module#CreatorModule'
   },
   {
     path: 'gallery',

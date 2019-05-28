@@ -63,7 +63,7 @@ const routes: Routes = [
 
       {
         path: "users",
-        loadChildren: "./features/tables/tables.module#TablesModule",
+        loadChildren: "./features/users/tables.module#TablesModule",
         data: { pageTitle: "Users" }
       },
 

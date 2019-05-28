@@ -198,3 +198,8 @@ form .required-mark {
     padding: 10px;
     
 }
+
+.dropzone {
+     min-height: 140px; 
+
+}

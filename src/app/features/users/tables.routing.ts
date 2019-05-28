@@ -1,12 +1,12 @@
 import {RouterModule, Routes} from "@angular/router";
-import { DatatablesCaseComponent } from "./datatables-case/datatables-case.component";
+import { DatatablesUsersComponent } from "./datatables-users.component";
 
 
 export const routes:Routes = [
 
   {
     path: '',
-    component: DatatablesCaseComponent,
+    component: DatatablesUsersComponent,
     data: {pageTitle: 'Datatables'}
   }
 

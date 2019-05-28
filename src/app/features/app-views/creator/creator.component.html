@@ -1,0 +1,250 @@
+<div id="content">
+  <div class="row">
+    <sa-big-breadcrumbs [items]="['Apps', 'Creator']" icon="pencil" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></sa-big-breadcrumbs>
+   
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+
+       <!-- start row -->
+
+    <div class="row">  
+        <article class="col-sm-12">
+     
+          <div class="navbar navbar-default">
+  
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-header" id="bs-example-navbar-collapse-2">
+              <ol class="nav navbar-nav ">
+                <li class="active">
+                  <a (click)="(null)">1. Basic info</a>
+                </li>
+               
+                <li>
+                  <a (click)="(null)">2. Layout</a>
+                </li>
+
+                <li>
+                    <a (click)="(null)">3. Design</a>
+                  </li>
+
+                  <li>
+                      <a (click)="(null)">4. Versions</a>
+                    </li>
+
+                    <li>
+                        <a (click)="(null)">5. Publish</a>
+                      </li>
+              </ol>
+  
+            </div><!-- /.navbar-collapse -->
+  
+          </div>
+  
+        </article>
+  
+      </div>
+  
+      <!-- end row -->
+
+       <!-- widget grid -->
+  <sa-widgets-grid>
+  
+      <!-- START ROW -->
+  
+      <div class="row">
+  
+        <!-- NEW COL START -->
+        <article class="col-sm-12 col-md-12 col-lg-12">
+  
+          <!-- Widget ID (each widget will need unique ID)-->
+          <div sa-widget [colorbutton]="false" [editbutton]="false" [custombutton]="false">
+            <!-- widget options:
+            usage: <div class="jarviswidget" id="wid-id-0" [editbutton]="false">
+  
+            [colorbutton]="false"
+            [editbutton]="false"
+            [togglebutton]="false"
+            [deletebutton]="false"
+            [fullscreenbutton]="false"
+            [custombutton]="false"
+            [collapsed]="true"
+            [sortable]="false"
+  
+            -->
+            <header>
+              <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+  
+              <h2>Basic App Informations </h2>
+  
+            </header>
+  
+            <!-- widget div-->
+            <div>
+  
+              <!-- widget content -->
+              <div class="widget-body no-padding">
+  
+                <form class="smart-form">
+                  <header>
+                    Basics
+                  </header>
+  
+                  <fieldset>
+                      <div class="row">
+                          <section class="col col-sm-12 col-md-6 col-lg-6">
+                          <label class="label">Platforms for Apps</label>
+
+                              <label class="checkbox">
+                                <input type="checkbox" name="checkbox" checked="checked">
+                                <i></i>Android</label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <i></i>iOS</label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <i></i>Microsoft Hololens</label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <i></i>Lenovo glasses</label>
+                              <label class="checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <i></i>Google glasses</label>
+                          
+                        </section>
+                      </div>
+                      <div class="row">
+                          <section class="col col-sm-12 col-md-6 col-lg-6">
+                            <label class="label">App name</label>
+                            <label class="input">
+                              <input type="text">
+                            </label>
+        
+                            <div class="note">
+                              <strong>Note:</strong> this name will be appear on the Apple and Google Play Store
+                            </div>
+                          </section>
+                       
+                    </div>
+                      <div class="row">
+
+                          <section class="col col-sm-12 col-md-6 col-lg-6">
+                  <label class="label">App languages</label>
+                  <label class="select select-multiple">
+                    <select multiple class="custom-scroll">
+                      <option value="1">English</option>
+                      <option value="2">Deutsch</option>
+                      <option value="3">Polski</option>
+                      <option value="4">EspaГ±ol</option>
+                      <option value="5">Italiano</option>
+                    </select> </label>
+
+                  <div class="note">
+                    <strong>Note:</strong> hold down the ctrl/cmd button to select multiple options.
+                  </div>
+                </section>
+                </div>
+
+                
+
+                  </fieldset>
+
+                  <header>
+                      Images
+                    </header>
+  
+                  <fieldset>
+                      <label class="label">Icon</label>
+                      <div class="row">
+                          <section class="col col-sm-12 col-md-6 col-lg-6">
+                             
+
+                  
+                <form class="dropzone">
+                  <div class="dz-default dz-message"><span><span class="text-center"><span
+                    class="font-lg visible-xs-block visible-sm-block visible-lg-block"><span class="font-xs"><i
+                    class="fa fa-caret-right text-danger"></i> Drop files <span
+                    class="font-xs">to upload</span></span><span>&nbsp;&nbsp;<h4
+                    class="display-inline"> (Or Click)</h4></span></span></span></span></div>
+                </form>
+                <div class="note">
+                    <strong>Note:</strong> 512x512 (32-bit PNG)
+                  </div>
+                </section>
+                <section class="col col-sm-12 col-md-3 col-lg-3">
+                  <img alt="img" src="assets/img/superbox/superbox-thumb-4.jpg" width="140">
+                  <p class="padding-10">
+                    <a class="btn btn-xs btn-primary"><i class="fa fa-edit"></i> Edit</a>&#xA0;
+                    <a class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
+                  </p>
+                </section>
+                </div>
+  
+           
+
+                    
+                  </fieldset>
+
+                  <footer>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                    <button type="button" class="btn btn-default" onclick="window.history.back();">
+                      Back
+                    </button>
+                  </footer>
+                </form>
+  
+              </div>
+              <!-- end widget content -->
+  
+            </div>
+            <!-- end widget div -->
+  
+          </div>
+          <!-- end widget -->
+  
+        </article>
+        <!-- END COL -->
+  
+      </div>
+  
+      <!-- END ROW -->
+  
+    </sa-widgets-grid>
+    <!-- end widget grid -->
+
+    </div>
+    <div class="col-sm-3">
+      <!-- /well -->
+      <div class="well padding-10">
+        <h5 class="margin-top-0"><i class="fa fa-fire"></i> Popular Posts:</h5>
+        <ul class="no-padding list-unstyled">
+         <li>
+            <a (click)="(null)" class="padding-top-5 display-block">How to create responsive app with AR platform?</a>
+          </li>
+          <li>
+            <a (click)="(null)" class="margin-top-5">The best AR apps 2019</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /well -->
+      <!-- /well -->
+      <div class="well padding-10">
+        <h5 class="margin-top-0"><i class="fa fa-video-camera"></i> Featured Videos/ Tutorial:</h5>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="margin-top-10">
+              <iframe allowfullscreen frameborder="0" height="210"
+                      mozallowfullscreen=""
+                      src="https://player.vimeo.com/video/87025094"
+                      webkitallowfullscreen=""
+                      width="100%"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /well -->
+    </div>
+  </div>
+</div>
