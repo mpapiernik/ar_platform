@@ -22,11 +22,7 @@ const routes: Routes = [
         data: { pageTitle: "App Views" }
       },
 
-      {
-        path: "calendar",
-        loadChildren:
-          "app/features/calendar/calendar.module#CalendarFeatureModule"
-      },
+     
       {
         path: "dashboard",
         loadChildren: "./features/dashboard/dashboard.module#DashboardModule",
@@ -39,19 +35,6 @@ const routes: Routes = [
         data: { pageTitle: "E-commerce" }
       },
 
-      {
-        path: "forms",
-        loadChildren:
-          "./features/forms/forms-showcase.module#FormsShowcaseModule",
-        data: { pageTitle: "Forms" }
-      },
-
-      {
-        path: "graphs",
-        loadChildren:
-          "./features/graphs/graphs-showcase.module#GraphsShowcaseModule",
-        data: { pageTitle: "Graphs" }
-      },
 
       {
         path: "miscellaneous",
@@ -65,20 +48,6 @@ const routes: Routes = [
         path: "users",
         loadChildren: "./features/users/tables.module#TablesModule",
         data: { pageTitle: "Users" }
-      },
-
-      {
-        path: "ui",
-        loadChildren:
-          "./features/ui-elements/ui-elements.module#UiElementsModule",
-        data: { pageTitle: "Ui" }
-      },
-
-      {
-        path: "widgets",
-        loadChildren:
-          "./features/widgets/widgets-showcase.module#WidgetsShowcaseModule",
-        data: { pageTitle: "Widgets" }
       }
     ]
   },

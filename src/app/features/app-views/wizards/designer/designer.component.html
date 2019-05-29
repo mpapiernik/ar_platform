@@ -1,0 +1,209 @@
+<br>
+<br>
+<!-- widget div-->
+<div>
+  <!-- widget content -->
+  <div class="widget-body">
+    <div class="widget-body-toolbar widget-body-toolbar-wizzard">
+
+      <div class="row">
+
+        <div class="col col-sm-2">
+
+          <label class="">Design for platform: </label>
+          <br>
+          <label class="select" style="width:100%">
+            <select class="input form-control">
+              <option value="0">Choose platform</option>
+              <option value="1">Android</option>
+              <option value="2" selected>iOS</option>
+              <option value="3">Hololens Glasses</option>
+              <option value="4">Lenovo Glasses</option>
+            </select> <i></i> </label>
+
+        </div>
+        <div class="col col-sm-2">
+
+          <label class="">Design for layout: </label>
+          <br>
+          <label class="select" style="width:100%">
+            <select class="input form-control">
+              <option value="0">Choose layout</option>
+              <option value="1">Vertical phone</option>
+              <option value="2">Vertical ipad</option>
+              <option value="3">Horizontal ipad</option>
+            </select> <i></i> </label>
+
+        </div>
+        <div class="col col-sm-8 text-align-right padding-10">
+          <div class="btn-group btn-header" style="margin-left: 6px;">
+            <a (click)="(null)" class="btn btn-primary"> <i class="fa fa-play"></i> Preview </a>
+          </div>
+
+          <div class="btn-group btn-header" style="margin-left: 6px;">
+            <a (click)="(null)" class="btn btn-success"> <i class="fa fa-floppy-o"></i> Save </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="widget-body">
+    <div class="designer row">
+      <div class="col col-md-2" style="background-color: navy">
+        Assets
+      </div>
+
+      <div class="col col-md-8" style="background-color: moccasin;">
+        canva
+      </div>
+      <div class="col col-md-2" style="background-color: lawngreen">
+        <h2 class="text-center">Settings</h2>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body">
+
+            <form class="form-horizontal">
+              <fieldset>
+                <legend>Possition</legend>
+                <div class="row">
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">W:</label>
+                      <div class="col-md-9"><input class="form-control" placeholder="1200px" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">H:</label>
+                      <div class="col-md-9"><input class="form-control" placeholder="800px" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">X:</label>
+                      <div class="col-md-9"><input class="form-control" placeholder="1200px" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">Y:</label>
+                      <div class="col-md-9"><input class="form-control" placeholder="1200px" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Style</legend>
+                <accordion class="smart-accordion-default panel-group" [closeOthers]="true">
+                  <accordion-group [isOpen]="true" #group1>
+                    <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group1?.isOpen,
+                                'fa-angle-up': !group1?.isOpen}"></i>
+                        TYPOGRAPHY</a>
+                    </h4>
+
+                    <div class="row">
+
+                      <div class="form-group"><label class="col-md-3 control-label" for="select-font">Font</label>
+                        <div class="col-md-8"><select class="form-control" id="select-font">
+                            <option>Arial</option>
+                            <option>Tahoma</option>
+                            <option>Lato</option>
+                            <option>Open Sans</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group"><label class="col-md-3 control-label" for="select-size">Size</label>
+                        <div class="col-md-5"><select class="form-control" id="select-size">
+                            <option>8 px</option>
+                            <option>9 px</option>
+                            <option>10 px</option>
+                            <option>12 px</option>
+                            <option>14 px</option>
+                            <option>16 px</option>
+                            <option>20 px</option>
+                            <option>24 px</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group"><label class="col-md-3 control-label">Color</label>
+                        <div class="col-md-8">
+                          <input class="form-control" [value]="color" [style.background]="color" [(colorPicker)]="color" [cpPosition]="'bottom'" cpPositionRelativeToArrow="'true'" [cpPositionOffset]="'-30%'" />
+                        </div>
+                      </div>
+                      <div class="form-group"><label class="col-md-3 control-label"></label>
+                       
+
+                      <div class="btn-group col-md-8">
+                        <button class="btn-default btn-sm btn" type="button" title="Bold" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B">
+                          <span class="glyphicon glyphicon-bold"></span> 
+                        </button>
+                        <button class="btn-default btn-sm btn" type="button" title="Italic" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button class="btn-default btn-sm btn" type="button" title="Heading" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div>
+
+                      </div>
+
+
+                    </div>
+
+                  </accordion-group>
+                  <accordion-group #group2>
+                    <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group2?.isOpen,
+                                'fa-angle-up': !group2?.isOpen}"></i>
+                        COLORS</a>
+                    </h4>
+                    <div class="row">
+                        <div class="form-group"><label class="col-md-3 control-label">Fill</label>
+                          <div class="col-md-8">
+                            <input class="form-control" [value]="color" [style.background]="color" [(colorPicker)]="color" [cpPosition]="'bottom'" cpPositionRelativeToArrow="'true'" [cpPositionOffset]="'-30%'" />
+                          </div>
+                        </div>
+                    </div>
+                  </accordion-group>
+                  <accordion-group #group3>
+                    <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group3?.isOpen,
+                                'fa-angle-up': !group3?.isOpen}"></i>
+                        STROKE</a>
+                    </h4>
+                    ...
+                  </accordion-group>
+                </accordion>
+              </fieldset>
+            </form>
+
+
+          </div>
+          <!-- end widget content -->
+
+        </div>
+        <!-- end widget div -->
+      </div>
+    </div>
+    <div class="designer row">
+      <div class="col col-md-2" style="background-color: goldenrod">
+        Pages
+      </div>
+
+      <div class="col col-md-10" style="background-color: red">
+          <fieldset>
+              <legend>Interactions</legend>
+
+        <label class="">Trigger </label>
+          <br>
+          <label class="select" style="width:100%">
+            <select class="input form-control">
+              <option value="0">Choose</option>
+              <option value="1">Swipe down</option>
+              <option value="2">Click</option>
+              <option value="3">Voice command</option>
+            </select> <i></i> </label>
+          </fieldset>
+      </div>
+    </div>
+
+  </div>
+  <!-- end widget content -->
+</div>
+<!-- end widget div -->

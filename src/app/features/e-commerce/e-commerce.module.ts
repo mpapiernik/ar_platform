@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OrdersComponent } from './orders/orders.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import {routing} from "./e-commerce.routing";
 import {ShoppingCartComponent} from "./shopping-cart/shopping-cart.component";
 import {CarouselModule} from "ngx-bootstrap";
@@ -25,8 +24,7 @@ import { SmartadminDatatableModule } from '@app/shared/ui/datatable/smartadmin-d
   ],
   declarations: [
     ShoppingCartComponent,
-    OrdersComponent,
-    ProductDetailsComponent
+    OrdersComponent
   ]
 })
 export class ECommerceModule { }

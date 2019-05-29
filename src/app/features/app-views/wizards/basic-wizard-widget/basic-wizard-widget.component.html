@@ -1,4 +1,4 @@
-<div sa-widget [editbutton]="false" [deletebutton]="false" color="darken">
+<div sa-widget [editbutton]="false" [deletebutton]="false" [colorbutton]="false" color="darken">
   <!-- widget options:
   usage: <div sa-widget [editbutton]="false">
 
@@ -13,7 +13,7 @@
 
   -->
   <header>
-    <span class="widget-icon"> <i class="fa fa-check"></i> </span>
+    <span class="widget-icon"> <i class="fa fa-cubes"></i> </span>
 
     <h2>Creator view </h2>
 
@@ -41,302 +41,23 @@
             </div>
             <div class="tab-content">
               <div class="tab-pane" [class.active]="activeStep.key == 'step1'">
-
                 <br>
-            
-              
-              <!-- widget div-->
-              <div>
-
-                  <!-- widget content -->
-                  <div class="widget-body no-padding">
-  
-                    <form class="smart-form">
-                      <header>
-                        Basics
-                      </header>
-  
-                      <fieldset>
-                        <div class="row">
-                          <section class="col col-sm-12 col-md-6 col-lg-6">
-                            <label class="label">Platforms for Apps</label>
-  
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox" checked="checked">
-                              <i></i>Android</label>
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox">
-                              <i></i>iOS</label>
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox">
-                              <i></i>Microsoft Hololens</label>
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox">
-                              <i></i>Lenovo glasses</label>
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox">
-                              <i></i>Google glasses</label>
-  
-                          </section>
-                        </div>
-                        <div class="row">
-                          <section class="col col-sm-12 col-md-6 col-lg-6">
-                            <label class="label">App name</label>
-                            <label class="input">
-                              <input type="text">
-                            </label>
-  
-                            <div class="note">
-                              <strong>Note:</strong> this name will be appear on the Apple and Google Play Store
-                            </div>
-                          </section>
-  
-                        </div>
-                        <div class="row">
-  
-                          <section class="col col-sm-12 col-md-6 col-lg-6">
-                            <label class="label">App languages</label>
-                            <label class="select select-multiple">
-                              <select multiple class="custom-scroll">
-                                <option value="1">English</option>
-                                <option value="2">Deutsch</option>
-                                <option value="3">Polski</option>
-                                <option value="4">EspaГ±ol</option>
-                                <option value="5">Italiano</option>
-                              </select> </label>
-  
-                            <div class="note">
-                              <strong>Note:</strong> hold down the ctrl/cmd button to select multiple options.
-                            </div>
-                          </section>
-                        </div>
-  
-                      </fieldset>
-  
-                      <header>
-                        Images
-                      </header>
-  
-                      <fieldset>
-                        <label class="label">Icon</label>
-                        <div class="row">
-                          <section class="col col-sm-12 col-md-6 col-lg-6">
-                            <form class="dropzone">
-                              <div class="dz-default dz-message"><span><span class="text-center"><span
-                                      class="font-lg visible-xs-block visible-sm-block visible-lg-block"><span
-                                        class="font-xs"><i class="fa fa-caret-right text-danger"></i> Drop files <span
-                                          class="font-xs">to upload</span></span><span>&nbsp;&nbsp;<h4
-                                          class="display-inline"> (Or Click)</h4></span></span></span></span></div>
-                            </form>
-  
-                            <div class="note">
-                              <strong>Note:</strong> 512x512 (32-bit PNG)
-                            </div>
-                          </section>
-                          <section class="col col-sm-12 col-md-3 col-lg-3">
-                            <img alt="img" src="assets/img/superbox/superbox-thumb-4.jpg" width="140">
-                            <p class="padding-10">
-                              <a class="btn btn-xs btn-primary"><i class="fa fa-edit"></i> Edit</a>&#xA0;
-                              <a class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
-                            </p>
-                          </section>
-                        </div>
-                      </fieldset>
-                    </form>
-  
-                  </div>
-                  <!-- end widget content -->
-  
-                </div>
-                <!-- end widget div -->
-
+                <sa-basic></sa-basic>
               </div>
               <div class="tab-pane" [class.active]="activeStep.key == 'step2'">
                 <br>
-                   <!-- widget div-->
-              <div>
-
-                  <!-- widget content -->
-                  <div class="widget-body no-padding">
-                      
-                    <form class="smart-form">
-                      <header>
-                        Layout
-                      </header>
-  
-                      <fieldset>
-                          <div class="row">
-                          <section class="col col-sm-6 col-md-3 col-lg-2">
-                              <label class="label">Set layout for platform</label>
-                              <label class="select">
-                                <select class="input" >
-                                  <option value="0">Choose platform</option>
-                                  <option value="1" selected>Android</option>
-                                  <option value="2">iOS</option>
-                                  <option value="3">Hololens Glasses</option>
-                                  <option value="4">Lenovo Glasses</option>
-                                </select> <i></i> </label>
-                            </section>
-                            </div>
-  
-                        <!-- row -->
-                        <div class="row">
-                          <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox" checked="checked">
-                              <i></i>Vertical mobile</label>
-                            <img src="assets/img/devices/phone.png" alt="Basic Email Template"
-                              style="width:100%; height:auto;">
-                          </div>
-                          <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox" checked="checked">
-                              <i></i>Vertical ipad</label>
-                            <img src="assets/img/devices/ipad-vertical.png" alt="Basic Email Template"
-                              style="width:100%; height:auto;">
-                          </div>
-                          <div class="col col-xs-12 col-sm-8 col-md-6 col-lg-4">
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox" checked="checked">
-                              <i></i>Horizontal ipad / Glasses</label>
-                            <img src="assets/img/devices/ipad-horizontal.png" alt="Sidebar Email Template"
-                              style="width:100%; height:auto;">
-                          </div>
-                        </div>
-                        <!-- end row -->
-                      </fieldset>
-                      <header>
-                        Canva size
-                      </header>
-                      <fieldset>
-                        <div class="row">
-                          <section class="col col-sm-12 col-md-6 col-lg-6">
-                            <label class="label">Unit</label>
-                            <div class="inline-group">
-                              <label class="radio">
-                                <input type="radio" name="radio-inline" checked="checked">
-                                <i></i>Pixels</label>
-                              <label class="radio">
-                                <input type="radio" name="radio-inline">
-                                <i></i>Milimeters</label>
-                              <label class="radio">
-                                <input type="radio" name="radio-inline">
-                                <i></i>Centimeters</label>
-                            </div>
-                          </section>
-                        </div>
-                        <div class="row">
-                          <section class="col col-sm-6 col-md-4 col-lg-3">
-                            <label class="label">Canva width</label>
-                            <label class="input">
-                              <input type="number">
-                            </label>
-                          </section>
-                          <section class="col col-sm-6 col-md-4 col-lg-3">
-                            <label class="label">Canva height</label>
-                            <label class="input">
-                              <input type="number">
-                            </label>
-                          </section>
-                        </div>
-                        <div class="row">
-                          <section class="col col-sm-12 col-md-6 col-lg-6">
-                            <label class="checkbox">
-                              <input type="checkbox" name="checkbox" checked="checked">
-                              <i></i>Keep ratio</label>
-                            <div class="note">
-                              <strong>Note:</strong> keep the same ratio as original devices layout
-                            </div>
-                          </section>
-                        </div>
-                      </fieldset>
-                    </form>
-  
-                  </div>
-                  <!-- end widget content -->
-  
-                </div>
-                <!-- end widget div -->
-
-              
+                <sa-layout></sa-layout>
               </div>
               <div class="tab-pane" [class.active]="activeStep.key == 'step3'">
                 <br>
-
-
-                <br>
-                <br>
-
-                <!-- widget div-->
-                <div>
-                  <!-- widget content -->
-                  <div class="widget-body">
-                    <div class="widget-body-toolbar widget-body-toolbar-wizzard">
-
-                      <div class="row">
-
-                        <div class="col col-sm-2">
-
-                          <label class="">Design for platform: </label>
-                          <br>
-                          <label class="select" style="width:100%">
-                            <select class="input form-control">
-                              <option value="0">Choose platform</option>
-                              <option value="1">Android</option>
-                              <option value="2" selected>iOS</option>
-                              <option value="3">Hololens Glasses</option>
-                              <option value="4">Lenovo Glasses</option>
-                            </select> <i></i> </label>
-
-                        </div>
-                        <div class="col col-sm-2">
-
-                          <label class="">Design for layout: </label>
-                          <br>
-                          <label class="select" style="width:100%">
-                            <select class="input form-control">
-                              <option value="0">Choose layout</option>
-                              <option value="1">Vertical phone</option>
-                              <option value="2">Vertical ipad</option>
-                              <option value="3">Horizontal ipad</option>
-                            </select> <i></i> </label>
-
-                        </div>
-                        <div class="col col-sm-8 text-align-right padding-10">
-                          <div class="btn-group btn-header" style="margin-left: 6px;">
-                            <a (click)="(null)" class="btn btn-primary"> <i class="fa fa-play"></i> Preview </a>
-                          </div>
-
-                          <div class="btn-group btn-header" style="margin-left: 6px;">
-                            <a (click)="(null)" class="btn btn-success"> <i class="fa fa-floppy-o"></i> Save </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="padding-10">
-                      designer
-                    </div>
-                  </div>
-                  <!-- end widget content -->
-                </div>
-                <!-- end widget div -->
-
-
+                <sa-designer></sa-designer>
               </div>
               <div class="tab-pane" [class.active]="activeStep.key == 'step4'">
-                <br>
-
-                <h3><strong>Step 4</strong> - Save Form</h3>
-                <br>
-
-                <h1 class="text-center text-success"><strong><i class="fa fa-check fa-lg"></i> Complete</strong></h1>
-                <h4 class="text-center">Click next to finish</h4>
-                <br>
-                <br>
+                <sa-versions></sa-versions>
               </div>
 
               <div class="tab-pane" [class.active]="activeStep.key == 'step5'">
-                publishing
+                <sa-publish></sa-publish>
               </div>
 
 
