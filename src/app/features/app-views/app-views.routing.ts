@@ -12,8 +12,11 @@ export const routes:Routes = [
     path: 'creator',
     loadChildren: './creator/creator.module#CreatorModule'
   },
-  
-  
+  {
+    path: 'wizards',
+    loadChildren: './wizards/wizards.module#WizardsModule',
+    data: {pageTitle: 'Wizards'}
+  },
   {
     path: 'projects',
     loadChildren: './projects/projects-list.module#ProjectsListModule'

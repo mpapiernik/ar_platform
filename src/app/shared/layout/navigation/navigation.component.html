@@ -8,28 +8,28 @@
     -->
 
     <ul saSmartMenu>
-
+      unnecessary
       <ng-container *ngIf="role === 'frontend'; else backendNav">
 
       </ng-container>
       <ng-template #backendNav>
 
-    
         <li routerLinkActive="active">
           <a routerLink="/dashboard" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span
               class="menu-item-parent">{{'Dashboard' | i18n}}</span></a>
         </li>
-
         <li>
           <a href="#">
             <i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">{{'Apps' | i18n}}</span></a>
           <ul>
             <li routerLinkActive="active">
-              <a routerLink="/app-views/projects"><i class="fa fa-file-text-o"></i>
-                {{'Projects' | i18n}}</a>
+              <a routerLink="/app-views/projects">{{'Projects' | i18n}}</a>
             </li>
             <li routerLinkActive="active">
-              <a routerLink="/app-views/creator"><i class="fa fa-pencil"></i> {{'Creator' | i18n}}</a>
+              <a routerLink="/app-views/creator">{{'Creator with nav' | i18n}}</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/app-views/wizards">{{'Creator with wizard' | i18n}}</a>
             </li>
           </ul>
         </li>
@@ -38,7 +38,6 @@
           <a routerLink="/users"><i class="fa fa-lg fa-fw fa-users"></i> <span
               class="menu-item-parent">{{'Users' | i18n}}</span></a>
         </li>
-
         <li>
           <a href="#">
             <i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span
@@ -50,19 +49,12 @@
             <li routerLinkActive="active">
               <a routerLink="/e-commerce/orders" title="Orders"> {{'Orders' | i18n}}</a>
             </li>
-            <li routerLinkActive="active">
-              <a routerLink="/e-commerce/product-details" title="Products Detail"> {{'Products Detail' | i18n}}</a>
-            </li>
           </ul>
         </li>
-
         <li>
           <a href="#"><i class="fa fa-lg fa-fw fa-cogs"></i> <span
               class="menu-item-parent">{{'Global Settings' | i18n}}</span></a>
           <ul>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/invoice">{{'Invoice' | i18n}}</a>
-            </li>
             <li routerLinkActive="active">
               <a routerLink="/auth/login">{{'Login' | i18n}}</a>
             </li>
@@ -72,30 +64,8 @@
             <li routerLinkActive="active">
               <a routerLink="/auth/forgot-password">{{'Forgot Password' | i18n}}</a>
             </li>
-            <li routerLinkActive="active">
-              <a routerLink="/auth/locked">{{'Locked Screen' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/error404">{{'Error 404' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/error500">{{'Error 500' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/blank">{{'Blank Page' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/email-template">{{'Email Template' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/search">{{'Search Page' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/miscellaneous/ckeditor">{{'CK Editor' | i18n}}</a>
-            </li>
           </ul>
         </li>
-
       </ng-template>
     </ul>
 
