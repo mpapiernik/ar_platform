@@ -203,3 +203,12 @@ form .required-mark {
      min-height: 140px; 
 
 }
+
+
+.smart-form.widget-body-toolbar, .widget-body-toolbar-wizzard {
+    border-top: 1px solid #ccc;
+}
+
+.bootstrapWizard li {
+    width: 20%;
+}

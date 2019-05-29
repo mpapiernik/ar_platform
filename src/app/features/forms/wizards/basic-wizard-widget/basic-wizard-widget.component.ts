@@ -2,11 +2,13 @@ import {
   Component, OnInit, DoCheck,
 } from '@angular/core';
 
-import { trigger,
+import {
+  trigger,
   state,
   style,
   transition,
-  animate} from '@angular/animations'
+  animate
+} from '@angular/animations'
 
 @Component({
   selector: 'basic-wizard-widget',
@@ -32,7 +34,7 @@ export class BasicWizardWidgetComponent implements OnInit, DoCheck {
   ngOnInit() {
   }
 
-   public model = {
+  public model = {
     email: '',
     firstname: '',
     lastname: '',
@@ -53,25 +55,32 @@ export class BasicWizardWidgetComponent implements OnInit, DoCheck {
     },
     {
       key: 'step2',
-      title: 'Billing information',
+      title: 'Layouts & Canva size',
       valid: false,
       checked: false,
       submitted: false,
     },
     {
       key: 'step3',
-      title: 'Domain Setup',
-      valid: true,
+      title: 'Designer',
+      valid: false,
       checked: false,
       submitted: false,
     },
     {
       key: 'step4',
-      title: 'Save Form',
-      valid: true,
+      title: 'Manage Versions',
+      valid: false,
       checked: false,
       submitted: false,
     },
+    {
+      key: 'step5',
+      title: 'Publish App',
+      valid: true,
+      checked: false,
+      submitted: false,
+    }
   ];
 
   public activeStep = this.steps[0];
@@ -89,18 +98,18 @@ export class BasicWizardWidgetComponent implements OnInit, DoCheck {
 
   nextStep() {
     this.activeStep.submitted = true;
-    if(!this.activeStep.valid){
+    if (!this.activeStep.valid) {
       return;
     }
     this.activeStep.checked = true;
-    if (this.steps.every(it=>(it.valid && it.checked))) {
+    if (this.steps.every(it => (it.valid && it.checked))) {
       this.onWizardComplete(this.model)
     } else {
       let idx = this.steps.indexOf(this.activeStep);
       this.activeStep = null;
       while (!this.activeStep) {
         idx = idx == this.steps.length - 1 ? 0 : idx + 1;
-        if (!this.steps[idx].valid || !this.steps[idx].checked ) {
+        if (!this.steps[idx].valid || !this.steps[idx].checked) {
           this.activeStep = this.steps[idx]
         }
       }
@@ -121,10 +130,10 @@ export class BasicWizardWidgetComponent implements OnInit, DoCheck {
       // backup model to compare further with
       this.lastModel = Object.assign({}, this.model)
     } else {
-      if (Object.keys(this.model).some(it=>this.model[it] != this.lastModel[it])) {
+      if (Object.keys(this.model).some(it => this.model[it] != this.lastModel[it])) {
         // change detected
-        this.steps.find(it=>it.key == 'step1').valid = !!(this.model.email && this.model.firstname && this.model.lastname);
-        this.steps.find(it=>it.key == 'step2').valid = !!(this.model.country && this.model.city && this.model.postal);
+        this.steps.find(it => it.key == 'step1').valid = !!(this.model.email && this.model.firstname && this.model.lastname);
+        this.steps.find(it => it.key == 'step2').valid = !!(this.model.country && this.model.city && this.model.postal);
         this.lastModel = Object.assign({}, this.model)
       }
     }
