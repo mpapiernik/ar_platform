@@ -1,4 +1,4 @@
-.smart-style-1 .btn-header > :first-child > a {
+.smart-style-1 .btn-header> :first-child>a {
     background: #0E70CA;
     border: 1px solid #125A9C;
 }
@@ -13,7 +13,7 @@
     width: 100%;
     height: 100vh;
     text-align: center;
-    
+
 }
 
 .loader-background img {
@@ -31,31 +31,32 @@ form .required-mark {
     border: 1px solid white;
 }
 
-    .dd-handle:hover {
-        background: #ecf3f8 !important;
-        border: 1px solid #c3e6f7;
-        color: #333 !important;
-    }
+.dd-handle:hover {
+    background: #ecf3f8 !important;
+    border: 1px solid #c3e6f7;
+    color: #333 !important;
+}
 
-        .dd-handle:hover + .dd-list .dd-handle {
-            background: white !important;
-            border: 1px solid white;
-            color: #333333 !important;
-        }
+.dd-handle:hover+.dd-list .dd-handle {
+    background: white !important;
+    border: 1px solid white;
+    color: #333333 !important;
+}
 
-    .dd-handle + .dd-list .dd-handle.active, .dd-handle.active {
-        background: #d9edf7 !important;
-        border: 1px solid #c3e6f7;
-        color: #333 !important;
-        font-weight: bold;
-    }
+.dd-handle+.dd-list .dd-handle.active,
+.dd-handle.active {
+    background: #d9edf7 !important;
+    border: 1px solid #c3e6f7;
+    color: #333 !important;
+    font-weight: bold;
+}
 
-.dd-item > button[data-action="collapse"]:before {
+.dd-item>button[data-action="collapse"]:before {
     color: #333;
     content: '\f068';
 }
 
-.dd-item > button:before {
+.dd-item>button:before {
     color: #333;
     content: '\f067';
 }
@@ -78,7 +79,7 @@ form .required-mark {
 }
 
 .modal-footer {
-    background-color: rgba(248,248,248,.9);
+    background-color: rgba(248, 248, 248, .9);
 }
 
 .input-group-addon label {
@@ -94,7 +95,8 @@ form .required-mark {
     width: 100%;
 }
 
-.input-group .col-sm-6, .input-group .col-sm-12 {
+.input-group .col-sm-6,
+.input-group .col-sm-12 {
     padding: 0px;
 }
 
@@ -115,20 +117,21 @@ form .required-mark {
     border-color: #c05e5e;
 }
 
-.input-group + .form-control-feedback {
+.input-group+.form-control-feedback {
     display: none !important;
 }
 
-.has-feedback .control-label, .has-feedback .checkbox-inline {
+.has-feedback .control-label,
+.has-feedback .checkbox-inline {
     color: inherit;
 }
 
-.has-error label input[type="checkbox"].checkbox + span:before {
+.has-error label input[type="checkbox"].checkbox+span:before {
     border-color: #b94a48;
     color: #a94442;
 }
 
-.has-success label input[type="checkbox"].checkbox + span:before {
+.has-success label input[type="checkbox"].checkbox+span:before {
     border-color: #3c763d;
     color: #3c763d;
 }
@@ -137,7 +140,7 @@ form .required-mark {
     margin-right: 1px;
 }
 
-.fixed-navigation nav > ul {
+.fixed-navigation nav>ul {
     height: auto;
 }
 
@@ -145,7 +148,11 @@ form .required-mark {
     display: none;
 }
 
-.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail > img, .thumbnail a > img {
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img {
     width: 100%;
 }
 
@@ -168,7 +175,8 @@ form .required-mark {
     cursor: pointer;
 }
 
-.link-button:hover, .link-button:focus {
+.link-button:hover,
+.link-button:focus {
     text-decoration: none;
 }
 
@@ -196,10 +204,84 @@ form .required-mark {
     padding-left: 0;
     text-align: left;
     padding: 10px;
-    
+
 }
 
 .dropzone {
-     min-height: 140px; 
+    min-height: 140px;
 
 }
+
+
+.smart-form.widget-body-toolbar,
+.widget-body-toolbar-wizzard {
+    border-top: 1px solid #ccc;
+}
+
+.bootstrapWizard li {
+    width: 20%;
+}
+
+#designer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: -26px -13px;
+}
+
+.designer-body {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+
+  .designer-body {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 60vh;
+    background: #a94442;
+  }
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+
+  }
+
+  .inner-row > aside > h3 {
+    margin: 0;
+  }
+  
+ .designer-nav
+{
+  flex: 0 0 20vw;
+  order: -1;
+
+}
+
+    .assets {
+    min-height: 60vh;
+      background: red;
+      
+  }
+       .pages {
+    min-height: 20vh;
+      background: blue;
+  }
+
+  footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  footer, article, aside, .assets, .pages {
+    padding: 1em;
+  }
