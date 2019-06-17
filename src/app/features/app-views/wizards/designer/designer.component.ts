@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { of, Observable } from "rxjs";
-import 'konva/konva';
 
 @Component({
   selector: 'sa-designer',
