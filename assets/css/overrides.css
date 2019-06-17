@@ -214,7 +214,7 @@ form .required-mark {
 
 
 .smart-form.widget-body-toolbar,
-.widget-body-toolbar-wizzard {
+.widget-body-toolbar-wizard {
     border-top: 1px solid #ccc;
 }
 
@@ -249,11 +249,14 @@ form .required-mark {
   }
   .inner-row article {
     min-height: 60vh;
-    background: #a94442;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
   .inner-row aside {
+    min-height: 60vh;
     background: beige;
     flex: 1;
+    border-bottom: 1px solid #ccc;
 
   }
 
@@ -265,23 +268,28 @@ form .required-mark {
 {
   flex: 0 0 20vw;
   order: -1;
+  
 
 }
 
-    .assets {
+    .assets{
     min-height: 60vh;
-      background: red;
+    
+  background: beige
       
   }
        .pages {
-    min-height: 20vh;
-      background: blue;
+    min-height: 30vh;
+      background: lightcyan;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
   }
 
-  footer {
-    background: yellowgreen;
-    height: 20vh;
+  .designer-footer {
+    border: 1px solid #ccc;
+    min-height: 30vh;
+
   }
-  footer, article, aside, .assets, .pages {
+   aside, .assets, .pages, .designer-footer {
     padding: 1em;
   }
