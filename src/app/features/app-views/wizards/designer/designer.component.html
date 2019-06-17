@@ -4,7 +4,7 @@
 <div>
   <!-- widget content -->
   <div class="designer-nav widget-body">
-    <div class="widget-body-toolbar widget-body-toolbar-wizzard">
+    <div class="widget-body-toolbar widget-body-toolbar-wizard">
 
       <div class="row">
 
@@ -54,7 +54,15 @@
         <div class="designer-nav">
 
           <div class="assets">
-            Assets
+            <h4>Assets</h4>
+            <div class="">
+              <div class="assets-panel-item">
+                Elem 1
+              </div>
+               <div class="side-panel-item">
+                 Elem 2
+                </div>
+              </div>
           </div>
           <div class="pages">
             Pages
@@ -62,21 +70,65 @@
 
         </div>
         <div class="inner-col">
-          <article>Article</article>
-          <footer>
-            <fieldset>
-              <legend>Interactions</legend>
-              <label class="">Trigger </label>
-              <br>
-              <label class="select" style="width:100%">
-                <select class="input form-control">
-                  <option value="0">Choose</option>
-                  <option value="1">Swipe down</option>
-                  <option value="2">Click</option>
-                  <option value="3">Voice command</option>
-                </select> <i></i> </label>
-            </fieldset>
-          </footer>
+          <article id="designer-canva">
+              <ko-stage id="ko-stage" [config]="configStage">
+                  <ko-layer>
+                    <ko-circle
+                      [config]="configCircle" 
+                      (click)="handleClick($event)"
+                      (dragstart)="handleDragStart($event)"
+                      (dragend)="handleDragEnd($event)">
+                    </ko-circle>
+
+                    <ko-text 
+                      [config]="configText"
+                      (click)="handleClick($event)"
+                      (dragstart)="handleDragStart($event)"
+                      (dragend)="handleDragEnd($event)">
+                  </ko-text>
+                  </ko-layer>
+                </ko-stage>`
+          </article>
+          <div class="designer-footer">
+            <form class="">
+              <fieldset>
+                <legend>Interactions</legend>
+                <div class="row">
+                    <div class="col col-sm-6">
+                        <label class="">Trigger </label>
+                        <br>
+                        <label class="select" style="width:100%">
+                          <select class="input form-control">
+                            <option value="0">Choose</option>
+                            <option value="1">Swipe down</option>
+                            <option value="2">Swipe up</option>
+                            <option value="3">Swipe left</option>
+                            <option value="4">Swipe right</option>
+                            <option value="5">Click (Tap)</option>
+                            <option value="6">Touch and Hold</option>
+                            <option value="7">Voice command</option>
+                          </select> <i></i> </label>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6">
+                        <label class="">Action</label>
+                        <br>
+                        <label class="select" style="width:100%">
+                          <select class="input form-control">
+                            <option value="0">Choose</option>
+                            <option value="1" selected>Get data from database</option>
+                            <option value="2">Go to page</option>
+                            <option value="3">Set variable</option>
+                            <option value="4">Set state</option>
+                          </select> <i></i> </label>
+                    </div>
+                </div>
+              
+              
+              </fieldset>
+           </form>
+          </div>
         </div>
         <aside>
           <h3 class="text-center">Settings</h3>
@@ -90,13 +142,13 @@
                   <div class="row">
                     <div class="col col-sm-6">
                       <div class="form-group"><label class="col-md-1 control-label">W:</label>
-                        <div class="col-md-9"><input class="form-control" placeholder="1200px" type="text">
+                        <div class="col-md-9"><input id="PosW" class="form-control" placeholder="1200px" type="text">
                         </div>
                       </div>
                     </div>
                     <div class="col col-sm-6">
                       <div class="form-group"><label class="col-md-1 control-label">H:</label>
-                        <div class="col-md-9"><input class="form-control" placeholder="800px" type="text">
+                        <div class="col-md-9"><input id="PosH" class="form-control" placeholder="800px" type="text">
                         </div>
                       </div>
                     </div>
@@ -104,13 +156,13 @@
                   <div class="row">
                     <div class="col col-sm-6">
                       <div class="form-group"><label class="col-md-1 control-label">X:</label>
-                        <div class="col-md-9"><input class="form-control" placeholder="1200px" type="text">
+                        <div class="col-md-9"><input id="PosX" class="form-control" placeholder="1200px" type="text">
                         </div>
                       </div>
                     </div>
                     <div class="col col-sm-6">
                       <div class="form-group"><label class="col-md-1 control-label">Y:</label>
-                        <div class="col-md-9"><input class="form-control" placeholder="1200px" type="text">
+                        <div class="col-md-9"><input id="PosY" class="form-control" placeholder="1200px" type="text">
                         </div>
                       </div>
                     </div>
