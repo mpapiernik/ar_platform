@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { of, Observable } from "rxjs";
-import { element } from '@angular/core/src/render3/instructions';
-import { getParentRenderElement } from '@angular/core/src/view/util';
+import * as Konva from 'konva/konva';
 
 @Component({
   selector: 'sa-designer',
