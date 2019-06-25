@@ -28,7 +28,7 @@ import { CalendarComponentsModule } from "@app/shared/calendar/calendar-componen
     RouterModule,
 
     SmartadminLayoutModule,
-    BootstrapModule
+    BootstrapModule,
   ],
   declarations: [],
   exports: [

@@ -55,14 +55,41 @@
 
           <div class="assets">
             <h4>Assets</h4>
+            <h2 class="section-headline g-heading-2 icon-general-expander"><span
+                class="section-headline-name">Libraries</span></h2>
             <div class="">
+              <div id="0" data-test="-0" class="scroll-pane has-scrollbar scrollbar-on-hover">
+                <ul id="" data-test="" class="scroll-pane-content g-unordered-list elements-list fixed-headline-scroll">
+                  <li draggable="true" class="library-element" data-element-type="Audio">
+                    <a data-test="library-element-0" id="element-6288"
+                      class="icon-libraries-commons icon-libraries-commons-audio" title="Audio"><span
+                        class="label">Audio</span></a>
+                  </li>
+                  <li draggable="true" class="library-element" data-element-type="Button"><a
+                      data-test="library-element-1" id="element-1795"
+                      class="icon-libraries-commons icon-libraries-commons-button" title="Button"><span
+                        class="label">Button</span></a></li>
+                  <li draggable="true" class="library-element" data-element-type="Checkbox"><a
+                      data-test="library-element-2" id="element-1807"
+                      class="icon-libraries-commons icon-libraries-commons-checkbox" title="Checkbox"><span
+                        class="label">Checkbox</span></a></li>
+                  <li draggable="true" class="library-element" data-element-type="Input2"><a
+                      data-test="library-element-3" id="element-1940"
+                      class="icon-libraries-commons icon-libraries-commons-input" title="Input"><span
+                        class="label">Input</span></a></li>
+
+                </ul>
+              </div>
+
+
               <div class="assets-panel-item">
                 Elem 1
+
               </div>
-               <div class="side-panel-item">
-                 Elem 2
-                </div>
+              <div class="assets-panel-item">
+                Elem 2
               </div>
+            </div>
           </div>
           <div class="pages">
             Pages
@@ -71,63 +98,84 @@
         </div>
         <div class="inner-col">
           <article id="designer-canva">
-              <ko-stage id="ko-stage" [config]="configStage">
-                  <ko-layer>
-                    <ko-circle
-                      [config]="configCircle" 
-                      (click)="handleClick($event)"
-                      (dragstart)="handleDragStart($event)"
-                      (dragend)="handleDragEnd($event)">
-                    </ko-circle>
+           <!--- <ko-stage id="ko-stage" [config]="configStage">
+              <ko-layer>
+                <ko-circle [config]="configCircle" (click)="handleClick($event)" (dragstart)="handleDragStart($event)"
+                  (dragend)="handleDragEnd($event)">
+                </ko-circle>
 
-                    <ko-text 
-                      [config]="configText"
-                      (click)="handleClick($event)"
-                      (dragstart)="handleDragStart($event)"
-                      (dragend)="handleDragEnd($event)">
-                  </ko-text>
-                  </ko-layer>
-                </ko-stage>`
+                <ko-text [config]="configText" (click)="handleClick($event)" (dragstart)="handleDragStart($event)"
+                  (dragend)="handleDragEnd($event)">
+                </ko-text>
+              </ko-layer>
+            </ko-stage>`
+          -->
+          <div>
+
+              <label class="select" style="width:100%">
+                  <select class="input form-control">
+                    <option value="0">Choose layout</option>
+                    <option value="1">Vertical phone</option>
+                    <option value="2">Vertical ipad</option>
+                    <option value="3">Horizontal ipad</option>
+                  </select> <i></i> </label>
+
+            <button id="drag-1" class="draggable btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
+                          data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold"
+                          data-hotkey="Ctrl+B">
+              <span class="glyphicon glyphicon-bold"></span>
+            </button>
+          </div>
+          <div id="drag-2" class="draggable">
+              <label class="select" style="width:100%">
+                  <select class="input form-control">
+                    <option value="0">Choose layout</option>
+                    <option value="1">Vertical phone</option>
+                    <option value="2">Vertical ipad</option>
+                    <option value="3">Horizontal ipad</option>
+                  </select> <i></i> </label>
+          </div>
+
           </article>
           <div class="designer-footer">
             <form class="">
               <fieldset>
                 <legend>Interactions</legend>
                 <div class="row">
-                    <div class="col col-sm-6">
-                        <label class="">Trigger </label>
-                        <br>
-                        <label class="select" style="width:100%">
-                          <select class="input form-control">
-                            <option value="0">Choose</option>
-                            <option value="1">Swipe down</option>
-                            <option value="2">Swipe up</option>
-                            <option value="3">Swipe left</option>
-                            <option value="4">Swipe right</option>
-                            <option value="5">Click (Tap)</option>
-                            <option value="6">Touch and Hold</option>
-                            <option value="7">Voice command</option>
-                          </select> <i></i> </label>
-                        </div>
+                  <div class="col col-sm-6">
+                    <label class="">Trigger </label>
+                    <br>
+                    <label class="select" style="width:100%">
+                      <select class="input form-control">
+                        <option value="0">Choose</option>
+                        <option value="1">Swipe down</option>
+                        <option value="2">Swipe up</option>
+                        <option value="3">Swipe left</option>
+                        <option value="4">Swipe right</option>
+                        <option value="5">Click (Tap)</option>
+                        <option value="6">Touch and Hold</option>
+                        <option value="7">Voice command</option>
+                      </select> <i></i> </label>
+                  </div>
                 </div>
                 <div class="row">
-                    <div class="col col-md-6">
-                        <label class="">Action</label>
-                        <br>
-                        <label class="select" style="width:100%">
-                          <select class="input form-control">
-                            <option value="0">Choose</option>
-                            <option value="1" selected>Get data from database</option>
-                            <option value="2">Go to page</option>
-                            <option value="3">Set variable</option>
-                            <option value="4">Set state</option>
-                          </select> <i></i> </label>
-                    </div>
+                  <div class="col col-md-6">
+                    <label class="">Action</label>
+                    <br>
+                    <label class="select" style="width:100%">
+                      <select class="input form-control">
+                        <option value="0">Choose</option>
+                        <option value="1" selected>Get data from database</option>
+                        <option value="2">Go to page</option>
+                        <option value="3">Set variable</option>
+                        <option value="4">Set state</option>
+                      </select> <i></i> </label>
+                  </div>
                 </div>
-              
-              
+
+
               </fieldset>
-           </form>
+            </form>
           </div>
         </div>
         <aside>

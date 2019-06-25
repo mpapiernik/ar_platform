@@ -264,20 +264,16 @@ form .required-mark {
     margin: 0;
   }
   
- .designer-nav
-{
+ .designer-nav {
   flex: 0 0 20vw;
   order: -1;
-  
-
 }
 
-    .assets{
-    min-height: 60vh;
-    
-  background: beige
-      
-  }
+.assets{
+    height: 60vh;
+    overflow-y: auto;    
+    background: beige      
+}
        .pages {
     min-height: 30vh;
       background: lightcyan;
@@ -293,3 +289,12 @@ form .required-mark {
    aside, .assets, .pages, .designer-footer {
     padding: 1em;
   }
+
+  #drag-1, #drag-2 {
+    margin: 10%;
+    padding: 4%;
+    touch-action: none;
+    user-select: none;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+}
