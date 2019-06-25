@@ -291,10 +291,19 @@ form .required-mark {
   }
 
   #drag-1, #drag-2 {
-    margin: 10%;
+    width: 40%;
+    background-color: #29e;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 2%;
+    margin: 5%;
     padding: 4%;
     touch-action: none;
     user-select: none;
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
+}
+
+    #designer-canva {
+        min-height: 60vh;
+        background-color: #125A9C;
 }

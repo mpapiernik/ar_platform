@@ -98,43 +98,26 @@
         </div>
         <div class="inner-col">
           <article id="designer-canva">
-           <!--- <ko-stage id="ko-stage" [config]="configStage">
-              <ko-layer>
-                <ko-circle [config]="configCircle" (click)="handleClick($event)" (dragstart)="handleDragStart($event)"
-                  (dragend)="handleDragEnd($event)">
-                </ko-circle>
+          <div id="drag-parent">
+              <div id="drag-1" class="draggable">
+                  <button class="btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
+                                data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold"
+                                data-hotkey="Ctrl+B">
+                    <span class="glyphicon glyphicon-bold"></span>
+                  </button>
+                </div>
+                <div id="drag-2" class="draggable">
+                    <label class="select" style="width:50%">
+                        <select class="input form-control">
+                          <option value="0">Choose layout</option>
+                          <option value="1">Vertical phone</option>
+                          <option value="2">Vertical ipad</option>
+                          <option value="3">Horizontal ipad</option>
+                        </select> <i></i> </label>
+                </div>
 
-                <ko-text [config]="configText" (click)="handleClick($event)" (dragstart)="handleDragStart($event)"
-                  (dragend)="handleDragEnd($event)">
-                </ko-text>
-              </ko-layer>
-            </ko-stage>`
-          -->
-          <div>
-
-              <label class="select" style="width:100%">
-                  <select class="input form-control">
-                    <option value="0">Choose layout</option>
-                    <option value="1">Vertical phone</option>
-                    <option value="2">Vertical ipad</option>
-                    <option value="3">Horizontal ipad</option>
-                  </select> <i></i> </label>
-
-            <button id="drag-1" class="draggable btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
-                          data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold"
-                          data-hotkey="Ctrl+B">
-              <span class="glyphicon glyphicon-bold"></span>
-            </button>
           </div>
-          <div id="drag-2" class="draggable">
-              <label class="select" style="width:100%">
-                  <select class="input form-control">
-                    <option value="0">Choose layout</option>
-                    <option value="1">Vertical phone</option>
-                    <option value="2">Vertical ipad</option>
-                    <option value="3">Horizontal ipad</option>
-                  </select> <i></i> </label>
-          </div>
+         
 
           </article>
           <div class="designer-footer">
