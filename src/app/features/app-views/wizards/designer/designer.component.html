@@ -47,305 +47,307 @@
       </div>
     </div>
   </div>
-  <div class="widget-body" id="designer">
-    <div class="designer-body">
+  <div class="widget-body">
 
-      <div class="inner-row">
-        <div class="designer-nav">
+    <div class="designer-container">
+      <div class="item item-assets">assets
 
-          <div class="assets">
-            <h4>Assets</h4>
-            <h2 class="section-headline g-heading-2 icon-general-expander"><span
-                class="section-headline-name">Libraries</span></h2>
-            <div class="">
-              <div id="0" data-test="-0" class="scroll-pane has-scrollbar scrollbar-on-hover">
-                <ul id="" data-test="" class="scroll-pane-content g-unordered-list elements-list fixed-headline-scroll">
-                  <li draggable="true" class="library-element" data-element-type="Audio">
-                    <a data-test="library-element-0" id="element-6288"
-                      class="icon-libraries-commons icon-libraries-commons-audio" title="Audio"><span
-                        class="label">Audio</span></a>
-                  </li>
-                  <li draggable="true" class="library-element" data-element-type="Button"><a
-                      data-test="library-element-1" id="element-1795"
-                      class="icon-libraries-commons icon-libraries-commons-button" title="Button"><span
-                        class="label">Button</span></a></li>
-                  <li draggable="true" class="library-element" data-element-type="Checkbox"><a
-                      data-test="library-element-2" id="element-1807"
-                      class="icon-libraries-commons icon-libraries-commons-checkbox" title="Checkbox"><span
-                        class="label">Checkbox</span></a></li>
-                  <li draggable="true" class="library-element" data-element-type="Input2"><a
-                      data-test="library-element-3" id="element-1940"
-                      class="icon-libraries-commons icon-libraries-commons-input" title="Input"><span
-                        class="label">Input</span></a></li>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
 
-                </ul>
-              </div>
+        </div>
+        <div class="assets-panel-item">
+          Elem 2
+        </div>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
 
+        </div>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
 
-              <div class="assets-panel-item">
-                Elem 1
-                <button mat-button>Click me!</button>
+        </div>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
 
-              </div>
-              <div class="assets-panel-item">
-                Elem 2
-              </div>
+        </div>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
+
+        </div>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
+
+        </div>
+        <div class="assets-panel-item">
+          Elem 1
+          <button mat-button>Click me!</button>
+
+        </div>
+
+      </div>
+      <div class="item item-pages">
+        <fieldset>
+          <legend>Pages</legend>
+          <div class="row">
+            <div class="col col-sm-12">
+              <a class="btn btn-primary" (click)="lgModal.show()"><i class="fa fa-plus"></i> Add new page</a>
+            </div>
+            <div class="btn-group pull-right">
+              <a href="" data-toggle="dropdown" class="btn .btn-circle btn-default btn-sm dropdown-toggle">
+                <i class="glyphicon glyphicon-list"></i>
+              </a>
+              <ul class="dropdown-menu text-left">
+                <li>
+                  <a href="">Rename</a>
+                </li>
+                <li>
+                  <a href="">Copy</a>
+                </li>
+                <li>
+                  <a href="">Delete</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="pages">
-            <fieldset>
-              <legend>Pages</legend>
-              <div class="row">
-                <div class="col col-sm-12">
-                  <a class="btn btn-primary" (click)="lgModal.show()"><i class="fa fa-plus"></i> Add new page</a>
-                </div>
-                <div class="btn-group pull-right">
-                    <a href="" data-toggle="dropdown" class="btn .btn-circle btn-default btn-sm dropdown-toggle">
-                      <i class="glyphicon glyphicon-list"></i>
-                    </a>
-                    <ul class="dropdown-menu text-left">
-                      <li>
-                        <a href="">Rename</a>
-                      </li>
-                      <li>
-                        <a href="">Copy</a>
-                      </li>
-                      <li>
-                        <a href="">Delete</a>
-                      </li>
-                    </ul>
-                  </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="col col-sm-12 sitemap">
-                  <ul>
-                    <li>
-                      <a>Main 
-                          <b class="collapse-sign"><em class="fa fa-reorder"></em></b>
-                      </a>
-                    </li>
-                    <li> 
-                     
-                      <a>Scanning </a>
-                     
-                    </li>
-                    <li> <a>Cart </a></li>
-                  </ul>
+          <br>
+          <div class="row">
+            <div class="col col-sm-12 sitemap">
+              <ul>
+                <li>
+                  <a>Main
+                    <b class="collapse-sign"><em class="fa fa-reorder"></em></b>
+                  </a>
+                </li>
+                <li>
 
-                </div>
-              </div>
-            </fieldset>
+                  <a>Scanning </a>
+
+                </li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+              </ul>
+
+            </div>
+          </div>
+        </fieldset>
+
+      </div>
+      <div class="item item-canva">canva
+
+        <div id="drag-parent">
+          <div id="drag-1" class="draggable">
+            <button class="btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
+              data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B">
+              <span class="glyphicon glyphicon-bold"></span>
+            </button>
+          </div>
+          <div id="drag-2" class="draggable">
+            <label class="select" style="width:50%">
+              <select class="input form-control">
+                <option value="0">Choose layout</option>
+                <option value="1">Vertical phone</option>
+                <option value="2">Vertical ipad</option>
+                <option value="3">Horizontal ipad</option>
+              </select> <i></i> </label>
           </div>
         </div>
-        <div class="inner-col">
-          <article id="designer-canva">
-            <div id="drag-parent">
-              <div id="drag-1" class="draggable">
-                <button class="btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
-                  data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B">
-                  <span class="glyphicon glyphicon-bold"></span>
-                </button>
-              </div>
-              <div id="drag-2" class="draggable">
-                <label class="select" style="width:50%">
+      </div>
+      <div class="item item-interactions">
+        <form class="">
+          <fieldset>
+            <legend>Interactions</legend>
+            <div class="row">
+              <div class="col col-sm-6">
+                <label class="">Trigger </label>
+                <br>
+                <label class="select" style="width:100%">
                   <select class="input form-control">
-                    <option value="0">Choose layout</option>
-                    <option value="1">Vertical phone</option>
-                    <option value="2">Vertical ipad</option>
-                    <option value="3">Horizontal ipad</option>
+                    <option value="0">Choose</option>
+                    <option value="1">Swipe down</option>
+                    <option value="2">Swipe up</option>
+                    <option value="3">Swipe left</option>
+                    <option value="4">Swipe right</option>
+                    <option value="5">Click (Tap)</option>
+                    <option value="6">Touch and Hold</option>
+                    <option value="7">Voice command</option>
                   </select> <i></i> </label>
               </div>
-
             </div>
+            <div class="row">
+              <div class="col col-md-6">
+                <label class="">Action</label>
+                <br>
+                <label class="select" style="width:100%">
+                  <select class="input form-control">
+                    <option value="0">Choose</option>
+                    <option value="1" selected>Get data from database</option>
+                    <option value="2">Go to page</option>
+                    <option value="3">Set variable</option>
+                    <option value="4">Set state</option>
+                  </select> <i></i> </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-sm-12">
+                <label class="">Trigger </label>
+                <br>
+                <textarea rows="5"></textarea>
+              </div>
+            </div>
+          </fieldset>
+        </form>
 
-
-          </article>
-          <div class="designer-footer">
-            <form class="">
+      </div>
+      <div class="item item-settings">
+        <h3 class="text-center">Settings</h3>
+        <!-- widget div-->
+        <div>
+          <!-- widget content -->
+          <div class="widget-body">
+            <form class="form-horizontal">
               <fieldset>
-                <legend>Interactions</legend>
+                <legend>Possition</legend>
                 <div class="row">
                   <div class="col col-sm-6">
-                    <label class="">Trigger </label>
-                    <br>
-                    <label class="select" style="width:100%">
-                      <select class="input form-control">
-                        <option value="0">Choose</option>
-                        <option value="1">Swipe down</option>
-                        <option value="2">Swipe up</option>
-                        <option value="3">Swipe left</option>
-                        <option value="4">Swipe right</option>
-                        <option value="5">Click (Tap)</option>
-                        <option value="6">Touch and Hold</option>
-                        <option value="7">Voice command</option>
-                      </select> <i></i> </label>
+                    <div class="form-group"><label class="col-md-1 control-label">W:</label>
+                      <div class="col-md-9"><input id="PosW" class="form-control" placeholder="1200px" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">H:</label>
+                      <div class="col-md-9"><input id="PosH" class="form-control" placeholder="800px" type="text">
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col col-md-6">
-                    <label class="">Action</label>
-                    <br>
-                    <label class="select" style="width:100%">
-                      <select class="input form-control">
-                        <option value="0">Choose</option>
-                        <option value="1" selected>Get data from database</option>
-                        <option value="2">Go to page</option>
-                        <option value="3">Set variable</option>
-                        <option value="4">Set state</option>
-                      </select> <i></i> </label>
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">X:</label>
+                      <div class="col-md-9"><input id="PosX" class="form-control" placeholder="1200px" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-sm-6">
+                    <div class="form-group"><label class="col-md-1 control-label">Y:</label>
+                      <div class="col-md-9"><input id="PosY" class="form-control" placeholder="1200px" type="text">
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Style</legend>
+                <accordion class="smart-accordion-default panel-group" [closeOthers]="true">
+                  <accordion-group [isOpen]="true" #group1>
+                    <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group1?.isOpen,
+                                            'fa-angle-up': !group1?.isOpen}"></i>
+                        TYPOGRAPHY</a>
+                    </h4>
+
+                    <div class="row">
+
+                      <div class="form-group"><label class="col-md-3 control-label" for="select-font">Font</label>
+                        <div class="col-md-8"><select class="form-control" id="select-font">
+                            <option>Arial</option>
+                            <option>Tahoma</option>
+                            <option>Lato</option>
+                            <option>Open Sans</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group"><label class="col-md-3 control-label" for="select-size">Size</label>
+                        <div class="col-md-5"><select class="form-control" id="select-size">
+                            <option>8 px</option>
+                            <option>9 px</option>
+                            <option>10 px</option>
+                            <option>12 px</option>
+                            <option>14 px</option>
+                            <option>16 px</option>
+                            <option>20 px</option>
+                            <option>24 px</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group"><label class="col-md-3 control-label">Color</label>
+                        <div class="col-md-8">
+                          <input class="form-control" [value]="color" [style.background]="color" [(colorPicker)]="color"
+                            [cpPosition]="'bottom'" cpPositionRelativeToArrow="'true'" [cpPositionOffset]="'-30%'" />
+                        </div>
+                      </div>
+                      <div class="form-group"><label class="col-md-3 control-label"></label>
 
 
+                        <div class="btn-group col-md-8">
+                          <button class="btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
+                            data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold"
+                            data-hotkey="Ctrl+B">
+                            <span class="glyphicon glyphicon-bold"></span>
+                          </button>
+                          <button class="btn-default btn-sm btn" type="button" title="Italic" tabindex="-1"
+                            data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic"
+                            data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button
+                            class="btn-default btn-sm btn" type="button" title="Heading" tabindex="-1"
+                            data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading"
+                            data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div>
+
+                      </div>
+
+
+                    </div>
+
+                  </accordion-group>
+                  <accordion-group #group2>
+                    <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group2?.isOpen,
+                                            'fa-angle-up': !group2?.isOpen}"></i>
+                        COLORS</a>
+                    </h4>
+                    <div class="row">
+                      <div class="form-group"><label class="col-md-3 control-label">Fill</label>
+                        <div class="col-md-8">
+                          <input class="form-control" [value]="color" [style.background]="color" [(colorPicker)]="color"
+                            [cpPosition]="'bottom'" cpPositionRelativeToArrow="'true'" [cpPositionOffset]="'-30%'" />
+                        </div>
+                      </div>
+                    </div>
+                  </accordion-group>
+                  <accordion-group #group3>
+                    <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group3?.isOpen,
+                                            'fa-angle-up': !group3?.isOpen}"></i>
+                        STROKE</a>
+                    </h4>
+                    ...
+                  </accordion-group>
+                </accordion>
               </fieldset>
             </form>
+
+
           </div>
+          <!-- end widget content -->
+
         </div>
-        <aside>
-          <h3 class="text-center">Settings</h3>
-          <!-- widget div-->
-          <div>
-            <!-- widget content -->
-            <div class="widget-body">
-              <form class="form-horizontal">
-                <fieldset>
-                  <legend>Possition</legend>
-                  <div class="row">
-                    <div class="col col-sm-6">
-                      <div class="form-group"><label class="col-md-1 control-label">W:</label>
-                        <div class="col-md-9"><input id="PosW" class="form-control" placeholder="1200px" type="text">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col col-sm-6">
-                      <div class="form-group"><label class="col-md-1 control-label">H:</label>
-                        <div class="col-md-9"><input id="PosH" class="form-control" placeholder="800px" type="text">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-sm-6">
-                      <div class="form-group"><label class="col-md-1 control-label">X:</label>
-                        <div class="col-md-9"><input id="PosX" class="form-control" placeholder="1200px" type="text">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col col-sm-6">
-                      <div class="form-group"><label class="col-md-1 control-label">Y:</label>
-                        <div class="col-md-9"><input id="PosY" class="form-control" placeholder="1200px" type="text">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-
-                <fieldset>
-                  <legend>Style</legend>
-                  <accordion class="smart-accordion-default panel-group" [closeOthers]="true">
-                    <accordion-group [isOpen]="true" #group1>
-                      <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group1?.isOpen,
-                                              'fa-angle-up': !group1?.isOpen}"></i>
-                          TYPOGRAPHY</a>
-                      </h4>
-
-                      <div class="row">
-
-                        <div class="form-group"><label class="col-md-3 control-label" for="select-font">Font</label>
-                          <div class="col-md-8"><select class="form-control" id="select-font">
-                              <option>Arial</option>
-                              <option>Tahoma</option>
-                              <option>Lato</option>
-                              <option>Open Sans</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="form-group"><label class="col-md-3 control-label" for="select-size">Size</label>
-                          <div class="col-md-5"><select class="form-control" id="select-size">
-                              <option>8 px</option>
-                              <option>9 px</option>
-                              <option>10 px</option>
-                              <option>12 px</option>
-                              <option>14 px</option>
-                              <option>16 px</option>
-                              <option>20 px</option>
-                              <option>24 px</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="form-group"><label class="col-md-3 control-label">Color</label>
-                          <div class="col-md-8">
-                            <input class="form-control" [value]="color" [style.background]="color"
-                              [(colorPicker)]="color" [cpPosition]="'bottom'" cpPositionRelativeToArrow="'true'"
-                              [cpPositionOffset]="'-30%'" />
-                          </div>
-                        </div>
-                        <div class="form-group"><label class="col-md-3 control-label"></label>
-
-
-                          <div class="btn-group col-md-8">
-                            <button class="btn-default btn-sm btn" type="button" title="Bold" tabindex="-1"
-                              data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold"
-                              data-hotkey="Ctrl+B">
-                              <span class="glyphicon glyphicon-bold"></span>
-                            </button>
-                            <button class="btn-default btn-sm btn" type="button" title="Italic" tabindex="-1"
-                              data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic"
-                              data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button
-                              class="btn-default btn-sm btn" type="button" title="Heading" tabindex="-1"
-                              data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading"
-                              data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div>
-
-                        </div>
-
-
-                      </div>
-
-                    </accordion-group>
-                    <accordion-group #group2>
-                      <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group2?.isOpen,
-                                              'fa-angle-up': !group2?.isOpen}"></i>
-                          COLORS</a>
-                      </h4>
-                      <div class="row">
-                        <div class="form-group"><label class="col-md-3 control-label">Fill</label>
-                          <div class="col-md-8">
-                            <input class="form-control" [value]="color" [style.background]="color"
-                              [(colorPicker)]="color" [cpPosition]="'bottom'" cpPositionRelativeToArrow="'true'"
-                              [cpPositionOffset]="'-30%'" />
-                          </div>
-                        </div>
-                      </div>
-                    </accordion-group>
-                    <accordion-group #group3>
-                      <h4 class="panel-title" accordion-heading><a><i class="pull-right fa fa-lg" [ngClass]="{'fa-angle-down': group3?.isOpen,
-                                              'fa-angle-up': !group3?.isOpen}"></i>
-                          STROKE</a>
-                      </h4>
-                      ...
-                    </accordion-group>
-                  </accordion>
-                </fieldset>
-              </form>
-
-
-            </div>
-            <!-- end widget content -->
-
-          </div>
-          <!-- end widget div -->
-        </aside>
+        <!-- end widget div -->
       </div>
     </div>
+
   </div>
   <!-- end widget content -->
 </div>
 <!-- end widget div -->
 
-
 <!-- Modal -->
-
 
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
   aria-hidden="true">

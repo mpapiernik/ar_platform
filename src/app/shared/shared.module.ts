@@ -9,7 +9,6 @@ import {I18nModule} from "./i18n/i18n.module";
 import { UserModule } from "./user/user.module";
 import { BootstrapModule } from "@app/shared/bootstrap.module";
 
-//import { DemoMaterialModule } from "@app/shared/material-module";
 import {VoiceControlModule} from "./voice-control/voice-control.module";
 
 import {SmartadminWidgetsModule} from "./widgets/smartadmin-widgets.module";
@@ -22,20 +21,21 @@ import {InlineGraphsModule} from "./graphs/inline/inline-graphs.module";
 import {SmartadminFormsLiteModule} from "./forms/smartadmin-forms-lite.module";
 import {SmartProgressbarModule} from "./ui/smart-progressbar/smart-progressbar.module";
 import { CalendarComponentsModule } from "@app/shared/calendar/calendar-components.module";
+import { DemoMaterialModule } from "./material.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     RouterModule,
-
     SmartadminLayoutModule,
     BootstrapModule,
-    //DemoMaterialModule
+    DemoMaterialModule
   ],
   declarations: [],
   exports: [
     CommonModule,
+    DemoMaterialModule,
     FormsModule,
     RouterModule,
 

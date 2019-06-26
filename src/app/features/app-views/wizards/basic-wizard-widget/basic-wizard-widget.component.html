@@ -40,18 +40,19 @@
               </ul>
             </div>
             <div class="tab-content">
-              <div class="tab-pane" [class.active]="activeStep.key == 'step1'">
+                <div class="tab-pane" [class.active]="activeStep.key == 'step1'">
+                    <br>
+                    <sa-designer></sa-designer>
+                  </div>
+              <div class="tab-pane" [class.active]="activeStep.key == 'step2'">
                 <br>
                 <sa-basic></sa-basic>
               </div>
-              <div class="tab-pane" [class.active]="activeStep.key == 'step2'">
+              <div class="tab-pane" [class.active]="activeStep.key == 'step3'">
                 <br>
                 <sa-layout></sa-layout>
               </div>
-              <div class="tab-pane" [class.active]="activeStep.key == 'step3'">
-                <br>
-                <sa-designer></sa-designer>
-              </div>
+             
               <div class="tab-pane" [class.active]="activeStep.key == 'step4'">
                 <sa-versions></sa-versions>
               </div>

@@ -20,7 +20,7 @@ import { ColorPickerModule } from 'ngx-color-picker';
     wizardsRouting,
     SharedModule,
     SmartadminWizardsModule,
-    ColorPickerModule,
+    ColorPickerModule
   ],
   declarations: [WizardsComponent, BasicWizardWidgetComponent, BasicComponent, LayoutComponent, DesignerComponent, VersionsComponent, PublishComponent]
 })
