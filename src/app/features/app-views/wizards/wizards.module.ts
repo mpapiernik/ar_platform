@@ -12,7 +12,6 @@ import { DesignerComponent } from './designer/designer.component';
 import { VersionsComponent } from './versions/versions.component';
 import { PublishComponent } from './publish/publish.component';
 import { ColorPickerModule } from 'ngx-color-picker';
-import { KonvaModule } from "ng2-konva";
 
 
 @NgModule({
@@ -22,7 +21,6 @@ import { KonvaModule } from "ng2-konva";
     SharedModule,
     SmartadminWizardsModule,
     ColorPickerModule,
-    KonvaModule
   ],
   declarations: [WizardsComponent, BasicWizardWidgetComponent, BasicComponent, LayoutComponent, DesignerComponent, VersionsComponent, PublishComponent]
 })

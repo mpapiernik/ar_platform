@@ -8,6 +8,8 @@ import { SmartadminLayoutModule } from "./layout";
 import {I18nModule} from "./i18n/i18n.module";
 import { UserModule } from "./user/user.module";
 import { BootstrapModule } from "@app/shared/bootstrap.module";
+
+//import { DemoMaterialModule } from "@app/shared/material-module";
 import {VoiceControlModule} from "./voice-control/voice-control.module";
 
 import {SmartadminWidgetsModule} from "./widgets/smartadmin-widgets.module";
@@ -29,6 +31,7 @@ import { CalendarComponentsModule } from "@app/shared/calendar/calendar-componen
 
     SmartadminLayoutModule,
     BootstrapModule,
+    //DemoMaterialModule
   ],
   declarations: [],
   exports: [
@@ -59,7 +62,7 @@ import { CalendarComponentsModule } from "@app/shared/calendar/calendar-componen
 
     VoiceControlModule,
 
-    CalendarComponentsModule,
+    CalendarComponentsModule
   ]
 })
 export class SharedModule {}
