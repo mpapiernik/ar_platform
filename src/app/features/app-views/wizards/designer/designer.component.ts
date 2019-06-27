@@ -11,6 +11,9 @@ declare const interact: any;
 export class DesignerComponent implements OnInit {
   color = "#278ce2";
 
+  data: any[] = [];
+
+
   constructor() { }
 
   ngOnInit() {
@@ -18,6 +21,7 @@ export class DesignerComponent implements OnInit {
     let x = 0;
     let y = 0;
 
+    
     interact(element)
       .draggable({
         modifiers: [
@@ -44,6 +48,16 @@ export class DesignerComponent implements OnInit {
           event.target.style.transform =
           'translate(' + x + 'px, ' + y + 'px)';
       });
+
+
+
+      for (let i = 1; i <= 10; i++) {
+        const item = { id: i, name: `Page ${i}`};
+  
+        this.data.push(item);
+      }
+
+
   }
 
 }

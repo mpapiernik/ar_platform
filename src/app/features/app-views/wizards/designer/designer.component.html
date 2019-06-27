@@ -50,97 +50,140 @@
   <div class="widget-body">
 
     <div class="designer-container">
-      <div class="item item-assets">assets
-
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-        <div class="assets-panel-item">
-          Elem 2
-        </div>
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-        <div class="assets-panel-item">
-          Elem 1
-          <button mat-button>Click me!</button>
-
-        </div>
-
-      </div>
-      <div class="item item-pages">
-        <fieldset>
-          <legend>Pages</legend>
-          <div class="row">
-            <div class="col col-sm-12">
-              <a class="btn btn-primary" (click)="lgModal.show()"><i class="fa fa-plus"></i> Add new page</a>
-            </div>
-            <div class="btn-group pull-right">
-              <a href="" data-toggle="dropdown" class="btn .btn-circle btn-default btn-sm dropdown-toggle">
-                <i class="glyphicon glyphicon-list"></i>
-              </a>
-              <ul class="dropdown-menu text-left">
-                <li>
-                  <a href="">Rename</a>
-                </li>
-                <li>
-                  <a href="">Copy</a>
-                </li>
-                <li>
-                  <a href="">Delete</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col col-sm-12 sitemap">
-              <ul>
-                <li>
-                  <a>Main
-                    <b class="collapse-sign"><em class="fa fa-reorder"></em></b>
-                  </a>
-                </li>
-                <li>
-
-                  <a>Scanning </a>
-
-                </li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-              </ul>
-
+      <div class="item item-components">
+        <fieldset class="item-nav">
+          <legend>Components</legend>
+          <div class="item-search input-group">
+            <input class="form-control" type="text" placeholder="Search for component..." id="search-project">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default">
+                &#xA0;&#xA0;&#xA0;<i class="fa fa-fw fa-search"></i>&#xA0;&#xA0;&#xA0;
+              </button>
             </div>
           </div>
         </fieldset>
+        <fieldset class="item-container">
+          <!--Grid row-->
+          <div class="row">
 
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-6">
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/checkboxes.png" alt="Checkboxes" matTooltip="Checkboxes">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button>ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/switches.png" alt="Switchers">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="Switchers">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/tabs-simple.png" alt="Tabs">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="Tabs">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-6">
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/radiobuttons.png" alt="Radiobuttons">
+                <small style="font-size: 10px">Radiobuttons</small>
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="Radiobuttons">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/cards-template014.png" alt="Card">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="Card">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/contained-button.png" alt="Contained button">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="Contained-button">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/datatables.png" alt="datatables">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="datatables">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+              <!--Card-->
+              <mat-card class="component-card">
+                <img mat-card-image src="assets/img/components/dialog-mobile-alert.png" alt="dialog-mobile-alert">
+                <mat-card-actions class="text-center">
+                  <button mat-raised-button matTooltip="dialog-mobile-alert">ADD</button>
+                </mat-card-actions>
+              </mat-card>
+              <!--Card-->
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </fieldset>
+      </div>
+      <div class="item item-pages">
+        <fieldset class="item-nav">
+          <legend>Pages</legend>
+          <a class="btn btn-primary" (click)="lgModal.show()"><i class="fa fa-plus"></i> Add new page</a>
+        </fieldset>
+        <fieldset class="item-container">
+          <div class="sitemap">
+
+            	<mat-nav-list>
+                  <mat-list-item (click)="menuTrigger.openMenu()" *ngFor="let i of data">
+                    <a mat-line ng-click="changePage()" > {{ i.name }}
+                    </a>
+                    <button mat-icon-button #menuTrigger="matMenuTrigger"  [matMenuTriggerFor]="menu">
+                      <mat-icon>more_vert</mat-icon>
+                   </button>
+                  </mat-list-item>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Rename</button>
+                    <button mat-menu-item>Clone</button>
+                    <button mat-menu-item>Delete</button>
+                  </mat-menu>
+                </mat-nav-list>
+
+<!--
+            <div class="col col-sm-12 sitemap">
+              <ul>
+                <li>
+                  <a>Scanning </a>
+                </li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+                <li> <a>Cart </a></li>
+              </ul>
+
+            </div>
+            -->
+          </div>
+
+        </fieldset>
       </div>
       <div class="item item-canva">canva
 
@@ -209,11 +252,28 @@
 
       </div>
       <div class="item item-settings">
-        <h3 class="text-center">Settings</h3>
+
         <!-- widget div-->
         <div>
           <!-- widget content -->
           <div class="widget-body">
+            <fieldset>
+              <legend>Grid</legend>
+            </fieldset>
+            <form class="smart-form">
+              <div class="row">
+                <section class="col col-sm-12">
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="ggridlines" checked="checked">
+                    <i></i>Show gridlines on canva</label>
+
+                  <label class="checkbox">
+                    <input type="checkbox" name="gridrestriction" checked="checked">
+                    <i></i>Restrict movement to grid</label>
+                </section>
+              </div>
+            </form>
             <form class="form-horizontal">
               <fieldset>
                 <legend>Possition</legend>

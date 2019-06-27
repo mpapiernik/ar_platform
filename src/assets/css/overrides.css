@@ -303,7 +303,7 @@ form .required-mark {
 
 .sitemap ul li a:active,
 .sitemap ul li a:hover {
-    background: #ccc !important;
+   /* background: #ccc !important; */
 }
 
 .sitemap ul b {
@@ -313,30 +313,35 @@ form .required-mark {
     margin-right: 5px;
 }
 
+.item {
+    padding: 1em;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
 
-.item-assets {
-    grid-area: item-assets;
-    background-color: lightgray;
+.item-components {
+    grid-area: item-components;
+    background-color: #f1f1f1;
 }
 
 .item-pages {
     grid-area: item-pages;
-    background-color: lightblue;
+    background-color: #f1f1f1;
 }
 
 .item-canva {
     grid-area: item-canva;
-    background-color: bisque;
 }
 
 .item-interactions {
     grid-area: item-interactions;
-    background-color: beige;
+    background-color: #f1f1f1;
 }
 
 .item-settings {
     grid-area: item-settings;
-    background-color: lightyellow;
+    background-color: #f1f1f1;
 
 }
 
@@ -344,10 +349,10 @@ form .required-mark {
     margin: -26px -13px -37px -13px;
     display: grid;
     grid-template-columns: [col1-start] 20% [col1-end] auto [col2-start] 20% [col2-end];
-    grid-template-rows: [first-line] 700px [second-line] 350px [last-line];
+    grid-template-rows: [first-line] 600px [second-line] 350px [last-line];
 
     grid-template-areas:
-        "item-assets item-canva item-settings"
+        "item-components item-canva item-settings"
         "item-pages item-interactions item-settings";
 
     grid-column-gap: 1px;
@@ -355,7 +360,41 @@ form .required-mark {
     background-color: #ccc;
 }
 
-.item {
-    padding: 1em;
-    overflow: auto;
+
+
+
+.item-nav{
+    height: 100px;
+    margin-bottom:5px;
+} 
+
+.item-container{
+    margin-top: -5px;
+    padding: 0 5px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;  
+    overflow-y: auto;
+    overflow-x: hidden;
+   /* Firefox */
+    height: -moz-calc(100% - 100px);
+    /* WebKit */
+    height: -webkit-calc(100% - 100px);
+    /* Opera */
+    height: -o-calc(100% - 100px);
+    /* Standard */
+    height: calc(100% - 100px);
+}
+
+
+.component-card {
+    margin: 10px 0;
+} 
+
+.widget-body-toolbar-wizard{
+    background: #e6e6e6;
+}
+
+.mat-menu-item, .mat-list-text {
+    font-size: 14px !important;
 }
