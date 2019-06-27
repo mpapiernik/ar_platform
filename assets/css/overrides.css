@@ -222,74 +222,179 @@ form .required-mark {
     width: 20%;
 }
 
-#designer {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    margin: -26px -13px;
+#drag-1,
+#drag-2 {
+    width: 10%;
+    background-color: #29e;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    padding: 2%;
+    margin: 5%;
+    touch-action: none;
+    user-select: none;
 }
 
-.designer-body {
-    display: flex;
-    flex-direction: column;
-    flex: 5;
-  }
 
-  .designer-body {
-    display: flex;
-    flex-direction: column;
-    flex: 5;
-  }
-  .inner-row {
-    display: flex;
-    flex-direction: row;
-  }
-  .inner-col {
-    flex: 4;
-  }
-  .inner-row article {
-    min-height: 60vh;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-  }
-  .inner-row aside {
-    min-height: 60vh;
-    background: beige;
-    flex: 1;
-    border-bottom: 1px solid #ccc;
+.sitemap>ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    left: 23px;
+    top: 16px;
+    border-top: 1px solid #7A7A7A;
+    z-index: 1;
+}
 
-  }
-
-  .inner-row > aside > h3 {
+.sitemap>ul {
+    list-style: none;
     margin: 0;
-  }
-  
- .designer-nav
-{
-  flex: 0 0 20vw;
-  order: -1;
-  
+    padding: 0;
+    width: 100%;
+    font-size: 13px;
+    line-height: .5em;
+    list-style: none;
+    position: relative;
 
 }
 
-    .assets{
-    min-height: 60vh;
-    
-  background: beige
-      
-  }
-       .pages {
-    min-height: 30vh;
-      background: lightcyan;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-  }
+.sitemap>ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 23px;
+    top: 16px;
+    bottom: 16px;
+    border-left: 1px solid #7A7A7A;
+}
 
-  .designer-footer {
-    border: 1px solid #ccc;
-    min-height: 30vh;
 
-  }
-   aside, .assets, .pages, .designer-footer {
+.sitemap ul li {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    position: relative;
+
+}
+
+.sitemap>ul li>a {
+    padding-left: 42px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+.sitemap>ul li a {
+    line-height: normal;
+    font-size: 14px;
+    color: #333;
+    display: block;
+    font-weight: 400;
+    text-decoration: none !important;
+    position: relative;
+
+}
+
+
+.sitemap ul li a:active,
+.sitemap ul li a:hover {
+   /* background: #ccc !important; */
+}
+
+.sitemap ul b {
+    float: right;
+    font-size: 11px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.item {
     padding: 1em;
-  }
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.item-components {
+    grid-area: item-components;
+    background-color: #f1f1f1;
+}
+
+.item-pages {
+    grid-area: item-pages;
+    background-color: #f1f1f1;
+}
+
+.item-canva {
+    grid-area: item-canva;
+}
+
+.item-interactions {
+    grid-area: item-interactions;
+    background-color: #f1f1f1;
+}
+
+.item-settings {
+    grid-area: item-settings;
+    background-color: #f1f1f1;
+
+}
+
+.designer-container {
+    margin: -26px -13px -37px -13px;
+    display: grid;
+    grid-template-columns: [col1-start] 20% [col1-end] auto [col2-start] 20% [col2-end];
+    grid-template-rows: [first-line] 600px [second-line] 350px [last-line];
+
+    grid-template-areas:
+        "item-components item-canva item-settings"
+        "item-pages item-interactions item-settings";
+
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    background-color: #ccc;
+}
+
+
+
+
+.item-nav{
+    height: 100px;
+    margin-bottom:5px;
+} 
+
+.item-container{
+    margin-top: -5px;
+    padding: 0 5px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;  
+    overflow-y: auto;
+    overflow-x: hidden;
+   /* Firefox */
+    height: -moz-calc(100% - 100px);
+    /* WebKit */
+    height: -webkit-calc(100% - 100px);
+    /* Opera */
+    height: -o-calc(100% - 100px);
+    /* Standard */
+    height: calc(100% - 100px);
+}
+
+
+.component-card {
+    margin: 10px 0;
+} 
+
+.widget-body-toolbar-wizard{
+    background: #e6e6e6;
+}
+
+.mat-menu-item, .mat-list-text {
+    font-size: 14px !important;
+}
