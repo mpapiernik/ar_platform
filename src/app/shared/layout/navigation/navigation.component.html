@@ -17,23 +17,19 @@
           <a routerLink="/dashboard" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span
               class="menu-item-parent">{{'Dashboard' | i18n}}</span></a>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">{{'Apps' | i18n}}</span></a>
-          <ul>
-            <li routerLinkActive="active">
-              <a routerLink="/app-views/projects">{{'Projects' | i18n}}</a>
-            </li>
-            <li routerLinkActive="active">
-              <a routerLink="/app-views/wizards">{{'Creator with wizard' | i18n}}</a>
-            </li>
-          </ul>
+       
+        <li routerLinkActive="active">
+          <a routerLink="/app-views/projects"><i class="fa fa-lg fa-fw fa-file-text-o"></i> <span
+              class="menu-item-parent">{{'Projects' | i18n}}</span></a>
         </li>
+        <li>
 
         <li routerLinkActive="active">
-          <a routerLink="/users"><i class="fa fa-lg fa-fw fa-users"></i> <span
-              class="menu-item-parent">{{'Users' | i18n}}</span></a>
+          <a routerLink="/app-views/wizards"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span
+              class="menu-item-parent">{{'Creator' | i18n}}</span></a>
         </li>
+
+        <!--
         <li>
           <a href="#">
             <i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span
@@ -62,6 +58,7 @@
             </li>
           </ul>
         </li>
+        -->
       </ng-template>
     </ul>
 

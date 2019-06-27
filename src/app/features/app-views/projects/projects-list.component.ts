@@ -24,12 +24,10 @@ export class ProjectsListComponent implements OnInit {
     },
     {"data": "name"},
     {"data": "est"},
-    {"data": "contacts"},
     {"data": "status"},
-    {"data": "target-actual"},
+    {"data": "platforms"},
     {"data": "starts"},
-    {"data": "ends"},
-    {"data": "tracker"}
+    {"data": "ends"}
   ],
   "order": [[1, 'asc']]
 }

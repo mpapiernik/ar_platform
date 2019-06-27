@@ -74,13 +74,6 @@ export class BasicWizardWidgetComponent implements OnInit, DoCheck {
       checked: false,
       submitted: false,
     },
-    {
-      key: 'step5',
-      title: 'Publish App',
-      valid: true,
-      checked: false,
-      submitted: false,
-    }
   ];
 
   public activeStep = this.steps[0];

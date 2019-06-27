@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { of, Observable } from "rxjs";
 
+export interface Item {
+  id: number;
+  title: string;
+  img: string;
+}
+
 
 declare const interact: any;
 
@@ -13,6 +19,12 @@ export class DesignerComponent implements OnInit {
 
   data: any[] = [];
 
+  componentItems: Item[] = [
+    {id: 1, title: 'Radiobuttons', img: 'assets/img/components/radiobuttons.png'},
+    {id: 2, title: 'Card', img: 'assets/img/components/cards-template014.png'},
+  ];
+
+  public startPageId:number = 1;
 
   constructor() { }
 
@@ -57,6 +69,11 @@ export class DesignerComponent implements OnInit {
         this.data.push(item);
       }
 
+
+  }
+
+  showPage(pageId) {
+    console.log("Show page nr " + pageId);
 
   }
 

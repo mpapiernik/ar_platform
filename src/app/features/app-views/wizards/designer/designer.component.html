@@ -7,7 +7,6 @@
     <div class="widget-body-toolbar widget-body-toolbar-wizard">
 
       <div class="row">
-
         <div class="col col-sm-2">
 
           <label class="">Design for platform: </label>
@@ -35,7 +34,17 @@
             </select> <i></i> </label>
 
         </div>
-        <div class="col col-sm-8 text-align-right padding-10">
+
+        <div class="col col-sm-2">
+          <label class="">&nbsp;</label>
+          <br>
+          <div class="btn-group btn-header">
+            <a (click)="(null)" class="btn btn-primary"> <i class="fa fa-refresh"></i> Reload </a>
+          </div>
+
+
+        </div>
+        <div class="col col-sm-6 text-align-right padding-10">
           <div class="btn-group btn-header" style="margin-left: 6px;">
             <a (click)="(null)" class="btn btn-primary"> <i class="fa fa-play"></i> Preview </a>
           </div>
@@ -65,7 +74,6 @@
         <fieldset class="item-container">
           <!--Grid row-->
           <div class="row">
-
             <!--Grid column-->
             <div class="col-lg-6 col-md-6 mb-6">
               <!--Card-->
@@ -150,42 +158,25 @@
         </fieldset>
         <fieldset class="item-container">
           <div class="sitemap">
-
-            	<mat-nav-list>
-                  <mat-list-item (click)="menuTrigger.openMenu()" *ngFor="let i of data">
-                    <a mat-line ng-click="changePage()" > {{ i.name }}
-                    </a>
-                    <button mat-icon-button #menuTrigger="matMenuTrigger"  [matMenuTriggerFor]="menu">
-                      <mat-icon>more_vert</mat-icon>
-                   </button>
-                  </mat-list-item>
-                  <mat-menu #menu="matMenu">
-                    <button mat-menu-item>Rename</button>
-                    <button mat-menu-item>Clone</button>
-                    <button mat-menu-item>Delete</button>
-                  </mat-menu>
-                </mat-nav-list>
-
-<!--
-            <div class="col col-sm-12 sitemap">
-              <ul>
-                <li>
-                  <a>Scanning </a>
-                </li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-                <li> <a>Cart </a></li>
-              </ul>
-
-            </div>
-            -->
+            <mat-nav-list>
+              <mat-list-item *ngFor="let i of data">
+                <p mat-line (click)="showPage(i.id)"> {{ i.name }}
+                </p>
+                <button mat-icon-button #menuTrigger="matMenuTrigger" [matMenuTriggerFor]="menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+              </mat-list-item>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>Rename</button>
+                <button mat-menu-item>Clone</button>
+                <button mat-menu-item>Delete</button>
+              </mat-menu>
+            </mat-nav-list>
           </div>
-
         </fieldset>
       </div>
-      <div class="item item-canva">canva
+      <div class="item item-canva">
+        <legend>Canva</legend>
 
         <div id="drag-parent">
           <div id="drag-1" class="draggable">
@@ -265,7 +256,7 @@
                 <section class="col col-sm-12">
 
                   <label class="checkbox">
-                    <input type="checkbox" name="ggridlines" checked="checked">
+                    <input type="checkbox" name="ggridlines">
                     <i></i>Show gridlines on canva</label>
 
                   <label class="checkbox">
