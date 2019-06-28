@@ -15,6 +15,12 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+  
+- task: FileTransform@1
+  inputs:
+    folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    fileType: 'json'
+    targetFiles: '**/angular.json'
 
 - script: |
     npm install -g @angular/cli
